@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24ACFEAD2AD076A400B8BFAB /* UIViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ACFEAC2AD076A400B8BFAB /* UIViewMenu.swift */; };
 		5E7EECB32ACED636009851CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EECB22ACED636009851CB /* AppDelegate.swift */; };
 		5E7EECB52ACED636009851CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EECB42ACED636009851CB /* SceneDelegate.swift */; };
 		5E7EECB72ACED636009851CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7EECB62ACED636009851CB /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24ACFEAC2AD076A400B8BFAB /* UIViewMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewMenu.swift; sourceTree = "<group>"; };
 		5E7EECAF2ACED636009851CB /* MenuDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuDrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7EECB22ACED636009851CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E7EECB42ACED636009851CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				5E7EECBB2ACED63A009851CB /* Assets.xcassets */,
 				5E7EECBD2ACED63A009851CB /* LaunchScreen.storyboard */,
 				5E7EECC02ACED63A009851CB /* Info.plist */,
+				24ACFEAC2AD076A400B8BFAB /* UIViewMenu.swift */,
 			);
 			path = MenuDrawer;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7EECB72ACED636009851CB /* ViewController.swift in Sources */,
+				24ACFEAD2AD076A400B8BFAB /* UIViewMenu.swift in Sources */,
 				5E7EECB32ACED636009851CB /* AppDelegate.swift in Sources */,
 				5E7EECB52ACED636009851CB /* SceneDelegate.swift in Sources */,
 			);
