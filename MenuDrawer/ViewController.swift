@@ -11,17 +11,20 @@ class ViewController: UIViewController {
 
     var menuView: UIView!
     var logoMenu: UIView!
+    var menuItems: UIView!
     var logoCircle: UIView!
     let topMenu = UIView(frame: CGRect(x: 4, y: 70, width: 385, height: 44))
     let openMenuButton = UIButton(frame: CGRect(x: 20, y: 5, width: 34, height: 34))
     let titApp = UILabel(frame: CGRect(x: 65, y: 0, width: 200, height: 44))
+    var menusItems: [UIView] = []
+    
     
     var isMenuOpen = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(self.view.frame.size.width)
+        //print(self.view.frame.size.width)
         
         topMenu.backgroundColor = UIColor.orange
         topMenu.layer.cornerRadius = 5
@@ -70,9 +73,23 @@ class ViewController: UIViewController {
         logoCircle.addSubview(logoImage)
         
         logoMenu.addSubview(logoCircle)
-        
         menuView.addSubview(logoMenu)
         
+        menuItems = UIView(frame: CGRect(x: 10, y: 260, width: 200, height: 230))
+        
+        let iconoMenu = UIImageView(image: UIImage(named: "iconoacceso"))
+        iconoMenu.contentMode = .scaleAspectFit
+        iconoMenu.frame = CGRect(x: 30, y: 5, width: 30, height: 30)
+        menuItems.addSubview(iconoMenu)
+        
+        let menuButton = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 44))
+        menuButton.setTitle("Menu 1", for: .normal)
+        menuButton.setTitleColor(UIColor.black, for: .normal)
+        menuButton.tag = 1
+        menuButton.addTarget(self, action: #selector(menuAction), for: .touchUpInside)
+        menuItems.addSubview(menuButton)
+        
+        menuView.addSubview(menuItems)
         self.view.addSubview(menuView)
 
     }
@@ -90,6 +107,11 @@ class ViewController: UIViewController {
             }
         }
         isMenuOpen = !isMenuOpen
+    }
+    
+    @objc func menuAction(sender:UIButton){
+        toggleMenu()
+        print("Has pulsado el Menu\(sender.tag)")
     }
 }
 
